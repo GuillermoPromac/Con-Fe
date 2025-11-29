@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>BioSalud - Tu bienestar primero</title>
+
+    <link rel="stylesheet" href="proyecto.css" />
+    <link rel="stylesheet" href="Pie.css" />
+    <link rel="stylesheet" href="menu_toggle.css" />
+  </head>
+
+  <body>
+    <!-- NAVBAR -->
+    <nav class="topheader">
+      <!-- BOTÓN HAMBURGUESA -->
+      <button class="menu-toggle" aria-label="Abrir menú">&#9776;</button>
+
+      <a href="#" class="logo">
+        <img height="90" src="imagen/Logo.png" alt="BioSalud" />
+      </a>
+
+      <ul class="Menu-Horizontal">
+        <li><a href="#promos">Promociones</a></li>
+        <li>
+          <a href="#">Productos</a>
+          <ul class="Menu-Vertical">
+            <li><a href="#">Vitaminas y Suplementos</a></li>
+            <li><a href="#">Dermocosmética</a></li>
+            <li><a href="#">Medicinas OTC</a></li>
+            <li><a href="#">Cuidado Personal</a></li>
+          </ul>
+        </li>
+        <li><a href="#servicios">Servicios</a></li>
+        <li><a href="#contacto">Contáctanos</a></li>
+      </ul>
+    </nav>
+
+    <!-- SECCIÓN PROMOCIONES -->
+    <section class="seccion-creditos" id="promos">
+      <div class="cont-gral-creditos">
+        <div class="con-cred-texto">
+          <h2>Promociones del Mes</h2>
+          <p>
+            Encuentra descuentos exclusivos en productos esenciales para tu
+            salud. BioSalud te ofrece ofertas en vitaminas, cuidado personal,
+            medicamentos OTC y mucho más.
+          </p>
+          <p>
+            Visita nuestras tiendas o compra online desde la comodidad de tu
+            hogar.
+          </p>
+        </div>
+
+        <div class="cont-cred-img">
+          <img src="imagen/Pastillas.jpg" alt="Promociones BioSalud" />
+        </div>
+      </div>
+    </section>
+
+    <!-- SECCIÓN SERVICIOS -->
+    <section class="seccion-seguros" id="servicios">
+      <div class="cont-gral-seguros">
+        <div class="cont-seg-texto">
+          <h2>Servicios BioSalud</h2>
+          <p>
+            En BioSalud te brindamos servicios que cuidan tu salud de forma
+            integral: toma de presión, control de peso, orientación farmacéutica
+            y más.
+          </p>
+          <p>
+            Contamos con profesionales capacitados y tecnología moderna para
+            darte una atención rápida y confiable.
+          </p>
+
+          <button class="btn-servicios">Ver más</button>
+        </div>
+
+        <div class="cont-seg-video">
+          <iframe
+            width="560"
+            height="315"
+            src="https://www.youtube.com/embed/Kxk3NFLKmmY?si=jpKNV0l4H09c2YiO"
+            title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            referrerpolicy="strict-origin-when-cross-origin"
+            allowfullscreen
+          ></iframe>
+        </div>
+      </div>
+    </section>
+
+    <!-- FORMULARIO -->
+    <section class="seccion-formulario" id="contacto">
+      <div class="cont-gral-formulario">
+        <h2>Regístrate</h2>
+        <p>Recibe cupones, promociones y novedades exclusivas.</p>
+
+        <form class="formulario">
+          <div class="campo">
+            <label for="nombre">Nombres completos</label>
+            <input type="text" id="nombre" placeholder="Ingresa tu nombre" />
+          </div>
+
+          <div class="campo">
+            <label for="pais">País</label>
+            <select id="pais">
+              <option value="">Seleccione un país</option>
+              <option value="Perú">Perú</option>
+              <option value="Chile">Chile</option>
+              <option value="Colombia">Colombia</option>
+              <option value="México">México</option>
+            </select>
+          </div>
+
+          <div class="campo">
+            <label>Intereses</label>
+            <ul class="lista-checkbox">
+              <li>
+                <label><input type="checkbox" value="salud" /> Salud</label>
+              </li>
+              <li>
+                <label><input type="checkbox" value="belleza" /> Belleza</label>
+              </li>
+              <li>
+                <label
+                  ><input type="checkbox" value="suplementos" />
+                  Suplementos</label
+                >
+              </li>
+            </ul>
+          </div>
+
+          <div class="campo">
+            <label>Género</label>
+            <ul class="lista-radio">
+              <li>
+                <label
+                  ><input type="radio" name="genero" value="masculino" />
+                  Masculino</label
+                >
+              </li>
+              <li>
+                <label
+                  ><input type="radio" name="genero" value="femenino" />
+                  Femenino</label
+                >
+              </li>
+            </ul>
+          </div>
+
+          <button type="submit">Enviar</button>
+        </form>
+      </div>
+    </section>
+
+    <!-- PIE DE PÁGINA -->
+    <footer class="footer">
+      <div class="footer-container">
+        <div class="footer-brand">
+          <img src="imagen/Logo.png" alt="Logo" class="footer-logo" />
+          <p>BioSalud</p>
+          <small>© 2025 Todos los derechos reservados</small>
+        </div>
+
+        <div class="footer-links">
+          <h4>Legal</h4>
+          <a href="/Documentos/3.politica-privacidad.pdf"
+            >Política de Privacidad</a
+          >
+          <a href="#">Términos y Condiciones</a>
+          <a href="/imagen/obtenerDocumento.pdf">Protección de Datos</a>
+        </div>
+
+        <div class="footer-social">
+          <h4>Síguenos</h4>
+          <a href="#"
+            ><img
+              src="https://cdn-icons-png.flaticon.com/512/145/145802.png"
+              alt="Facebook"
+              class="social-icon"
+          /></a>
+          <a href="#"
+            ><img
+              src="https://cdn-icons-png.flaticon.com/512/145/145812.png"
+              alt="Instagram"
+              class="social-icon"
+          /></a>
+          <a href="#"
+            ><img
+              src="https://cdn-icons-png.flaticon.com/512/145/145807.png"
+              alt="LinkedIn"
+              class="social-icon"
+          /></a>
+          <a href="#"
+            ><img
+              src="https://cdn-icons-png.flaticon.com/512/145/145806.png"
+              alt="Twitter"
+              class="social-icon"
+          /></a>
+        </div>
+      </div>
+    </footer>
+
+    <!-- SCRIPT MENU HAMBURGUESA -->
+    <script src="menu_toggle.js"></script>
+  </body>
+</html>
