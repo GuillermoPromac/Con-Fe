@@ -10,26 +10,57 @@
 
 /* RESPONSIVE: MÓVILES */
 @media (max-width: 768px) {
-  .menu-toggle {
-    display: block; /* Mostrar botón hamburguesa en móviles */
-    color: black;
+  .topheader {
+    height: 60px; /* Reducir altura del header */
+    padding: 0 10px;
   }
 
+  .menu-toggle {
+    display: block; /* Mostrar botón hamburguesa en móviles */
+    order: 1; /* Primero el botón */
+    margin-left: 0;
+    margin-right: auto;
+  }
   .Menu-Horizontal {
     display: none; /* Ocultar menú horizontal por defecto */
     flex-direction: column; /* Mostrarlo en vertical al activarse */
     width: 100%;
     background-color: white;
-    position: absolute;
-    top: 5rem; /* Debajo del menú fijo */
+    position: fixed; /* Fixed para que cubra toda la pantalla */
+    top: 60px; /* Debajo del header */
     left: 0;
+    margin: 0;
+    padding: 0;
   }
 
   .Menu-Horizontal.active {
     display: flex; /* Mostrar menú al activar la clase */
   }
 
-  .Menu-Horizontal li {
+  .Menu-Horizontal > li {
     border-bottom: 1px solid #ccc; /* Líneas separadoras */
+    width: 100%;
+  }
+
+  .Menu-Horizontal li a {
+    padding: 15px 20px; /* Más espacio para tocar en móviles */
+    text-align: left;
+  }
+
+  /* Ocultar submenús en móviles (o ajustarlos) */
+  .Menu-Vertical {
+    position: static; /* No flotante */
+    width: 100%;
+    background-color: #f5f5f5;
+    border: none;
+    display: none; /* Oculto por defecto */
+  }
+
+  .Menu-Horizontal li:hover .Menu-Vertical {
+    display: none; /* Desactivar hover en móviles */
+  }
+
+  .Menu-Vertical li a {
+    padding-left: 40px; /* Indentar submenú */
   }
 }
